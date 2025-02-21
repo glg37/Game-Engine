@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 5896819522218913139}
   - component: {fileID: 2592545511219810889}
   - component: {fileID: 7438551467347489526}
-  - component: {fileID: 7553490447164215830}
   - component: {fileID: 5915826776340690188}
   - component: {fileID: -8073588718565146573}
   m_Layer: 0
@@ -100,7 +99,7 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: 30
+  m_ForceMagnitude: 70
   m_ForceVariation: 0
   m_DistanceScale: 1
   m_ForceSource: 0
@@ -108,27 +107,6 @@ PointEffector2D:
   m_ForceMode: 0
   m_Drag: 0
   m_AngularDrag: 0
---- !u!50 &7553490447164215830
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 71971028080765725}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 50
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!58 &5915826776340690188
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -144,7 +122,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 5
 --- !u!114 &-8073588718565146573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,4 +135,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08d99bdb8bac2e5479b0c1eccbc2622c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimeToDesactive: 0.2
+  TimeToDesactive: 0.36

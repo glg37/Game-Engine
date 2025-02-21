@@ -9,7 +9,7 @@ public class Explosion : MonoBehaviour
    IEnumerator Start()
     {
         yield return new WaitForSeconds(TimeToDesactive);
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     // Update is called once per frame

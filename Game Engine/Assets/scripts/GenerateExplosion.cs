@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class GenerateExplosion : MonoBehaviour
 {
-    [SerializeField] GameObject explosion;
+    [SerializeField]GameObject explosion;
+ 
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,8 @@ public class GenerateExplosion : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            Instantiate(explosion, transform.position, transform.rotation);
+            Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(explosion,mousePos, transform.rotation);
         }
     }
 }
