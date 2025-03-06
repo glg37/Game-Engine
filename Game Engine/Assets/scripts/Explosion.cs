@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class Explosion : MonoBehaviour
 {
-    [SerializeField] float TimeToDesactive;
+    [SerializeField] float timeToDesactive;
+
     // Start is called before the first frame update
-   IEnumerator Start()
+    IEnumerator Start()
     {
-        yield return new WaitForSeconds(TimeToDesactive);
+        yield return new WaitForSeconds(timeToDesactive);
         Destroy(gameObject);
     }
 
@@ -17,8 +18,10 @@ public class Explosion : MonoBehaviour
     {
         
     }
+    /*
     IEnumerator DesactiveObject()
     {
         yield return new WaitForSeconds(0.5f);
     }
+    */
 }
